@@ -3,9 +3,8 @@ from pymongo.mongo_client import MongoClient
 import os
 
 uri = os.environ.get('MongoDB_String')
-print(type(uri))
 
-cluster = MongoClient("mongodb+srv://janukasf:3366@cluster0.h2brxcb.mongodb.net/?retryWrites=true&w=majority")
+cluster = MongoClient(uri)
 print("Authhhhhhhhhhhh")
 
 try:
